@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Please fill up the following Form to get your Holiday Package Predicted</h1>
+    <form method="POST" action="/">
+
+        <label for="CustomerID"> CustomerID:</label>
+        <input type="number" id="CustomerID" name="CustomerID" value="0"><br><br>
+
+        <label for="Age"> Age: </label>
+        <input type="number" id="Age" name="Age" value="0"><br><br>
+
+        <label> Select Type of Contact:</label><br>
+        <input type="radio" name="TypeofContact" value="Self Enquiry"> Self Enquiry<br>
+        <input type="radio" name="TypeofContact" value="Company Invited"> Company Invited<br><br>
+
+        <label> Select Type of CityTier:</label><br>
+        <input type="radio" name="CityTier" value="3"> Smaller City<br>
+        <input type="radio" name="CityTier" value="2"> Metropolitan City<br>
+        <input type="radio" name="CityTier" value="1"> Larger City<br><br>
+
+        <label for="DurationOfPitch"> Select Duration Of Pitch:</label><br>
+        <input type="number" id="DurationOfPitch" name="DurationOfPitch" value="0.0"><br><br>
+
+        <label> Select your Occupation:</label><br>
+        <input type="radio" name="Occupation" value="Salaried"> Salaried<br>
+        <input type="radio" name="Occupation" value="Small Business"> Small Business<br>
+        <input type="radio" name="Occupation" value="Free Lancer"> Free Lancer<br>
+        <input type="radio" name="Occupation" value="Large Business"> Large Business<br><br>
+
+        <label> Select your gender:</label><br>
+        <input type="radio" name="Gender" value="Male" required> Male<br>
+        <input type="radio" name="Gender" value="Female"> Female<br><br>
+
+        <label for="NumberOfPersonVisiting"> Select Number Of Person Visiting:</label><br>
+        <input type="number" id="NumberOfPersonVisiting" name="NumberOfPersonVisiting" value="0"><br><br>
+
+        <label for="NumberOfFollowups"> Select Number Of Followups:</label><br>
+        <input type="number" id="NumberOfFollowups" name="NumberOfFollowups" value="0"><br><br>
+
+        <label> Select Product Pitched:</label><br>
+        <input type="radio" name="ProductPitched" value="Basic"> Basic<br>
+        <input type="radio" name="ProductPitched" value="Deluxe"> Deluxe<br>
+        <input type="radio" name="ProductPitched" value="Standard"> Standard<br>
+        <input type="radio" name="ProductPitched" value="King"> King<br>
+        <input type="radio" name="ProductPitched" value="Super Deluxe"> Super Deluxe<br><br>
+
+        <label for="PreferredPropertyStar"> Select Preferred Property Star:</label><br>
+        <input type="number" id="PreferredPropertyStar" name="PreferredPropertyStar" value="0"><br><br>
+
+        <label> Select Marital Status:</label><br>
+        <input type="radio" name="MaritalStatus" value="Married"> Married<br>
+        <input type="radio" name="MaritalStatus" value="Divorced"> Divorced<br>
+        <input type="radio" name="MaritalStatus" value="Single"> Single<br>
+        <input type="radio" name="MaritalStatus" value="Unmarried"> Unmarried<br><br>
+
+        <label for="NumberOfTrips"> Select Number Of Trips:</label><br>
+        <input type="number" id="NumberOfTrips" name="NumberOfTrips" value="0"><br><br>
+
+        <label> Do you have Passport?:</label><br>
+        <input type="radio" name="Passport" value="1">Yes<br>
+        <input type="radio" name="Passport" value="0">No<br><br>
+
+        <label> Select Pitch Satisfaction Score:</label><br>
+        <input type="radio" name="PitchSatisfactionScore" value="5"> Very Good<br>
+        <input type="radio" name="PitchSatisfactionScore" value="4"> Good<br>
+        <input type="radio" name="PitchSatisfactionScore" value="3"> Normal<br>
+        <input type="radio" name="PitchSatisfactionScore" value="2"> Bad<br>
+        <input type="radio" name="PitchSatisfactionScore" value="1"> Very Bad<br><br>
+
+        <label> Do you own a Car?:</label><br>
+        <input type="radio" name="OwnCar" value="1"> Yes<br>
+        <input type="radio" name="OwnCar" value="0"> No<br><br>
+
+        <label for="NumberOfChildrenVisiting"> Enter Number of Children</label>
+        <input type="text" id="NumberOfChildrenVisiting" name="NumberOfChildrenVisiting" value="0"><br><br>
+
+        <label> Select Designation:</label><br>
+        <input type="radio" name="Designation" value="Executive"> Executive<br>
+        <input type="radio" name="Designation" value="Manager"> Manager<br>
+        <input type="radio" name="Designation" value="Senior Manager"> Senior Manager<br>
+        <input type="radio" name="Designation" value="AVP"> AVP<br>
+        <input type="radio" name="Designation" value="VP"> VP<br><br>
+
+        <label for="MonthlyIncome"> Enter Monthly Income</label><br>
+        <input type="text" id="MonthlyIncome" name="MonthlyIncome" value="0"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

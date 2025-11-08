@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Package Prediction Form</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e3f2fd, #bbdefb);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            background: #fff;
+            margin: 50px auto;
+            padding: 40px 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            text-align: center;
+            color: #0a3866;
+            margin-bottom: 30px;
+        }
+
+        form label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 6px;
+            color: #333;
+        }
+
+        input[type="number"],
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+
+        .radio-group {
+            margin-bottom: 20px;
+        }
+
+        .radio-group label {
+            font-weight: normal;
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #0d47a1;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+            display: block;
+            margin: 0 auto;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1565c0;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Holiday Package Prediction Form</h1>
+
+        <form method="POST" action="/">
+            
+            <label for="CustomerID">Customer ID:</label>
+            <input type="number" id="CustomerID" name="CustomerID" value="0">
+
+            <label for="Age">Age:</label>
+            <input type="number" id="Age" name="Age" value="0">
+
+            <label>Type of Contact:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="TypeofContact" value="Self Enquiry">Self Enquiry</label>
+                <label><input type="radio" name="TypeofContact" value="Company Invited">Company Invited</label>
+            </div>
+
+            <label>City Tier:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="CityTier" value="3">Smaller City</label>
+                <label><input type="radio" name="CityTier" value="2">Metropolitan City</label>
+                <label><input type="radio" name="CityTier" value="1">Larger City</label>
+            </div>
+
+            <label for="DurationOfPitch">Duration of Pitch (in mins):</label>
+            <input type="number" id="DurationOfPitch" name="DurationOfPitch" value="0.0">
+
+            <label>Occupation:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="Occupation" value="Salaried">Salaried</label>
+                <label><input type="radio" name="Occupation" value="Small Business">Small Business</label>
+                <label><input type="radio" name="Occupation" value="Free Lancer">Free Lancer</label>
+                <label><input type="radio" name="Occupation" value="Large Business">Large Business</label>
+            </div>
+
+            <label>Gender:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="Gender" value="Male" required>Male</label>
+                <label><input type="radio" name="Gender" value="Female">Female</label>
+            </div>
+
+            <label for="NumberOfPersonVisiting">Number of Persons Visiting:</label>
+            <input type="number" id="NumberOfPersonVisiting" name="NumberOfPersonVisiting" value="0">
+
+            <label for="NumberOfFollowups">Number of Follow-ups:</label>
+            <input type="number" id="NumberOfFollowups" name="NumberOfFollowups" value="0">
+
+            <label>Product Pitched:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="ProductPitched" value="Basic">Basic</label>
+                <label><input type="radio" name="ProductPitched" value="Deluxe">Deluxe</label>
+                <label><input type="radio" name="ProductPitched" value="Standard">Standard</label>
+                <label><input type="radio" name="ProductPitched" value="King">King</label>
+                <label><input type="radio" name="ProductPitched" value="Super Deluxe">Super Deluxe</label>
+            </div>
+
+            <label for="PreferredPropertyStar">Preferred Property Star:</label>
+            <input type="number" id="PreferredPropertyStar" name="PreferredPropertyStar" value="0">
+
+            <label>Marital Status:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="MaritalStatus" value="Married">Married</label>
+                <label><input type="radio" name="MaritalStatus" value="Divorced">Divorced</label>
+                <label><input type="radio" name="MaritalStatus" value="Single">Single</label>
+                <label><input type="radio" name="MaritalStatus" value="Unmarried">Unmarried</label>
+            </div>
+
+            <label for="NumberOfTrips">Number of Trips:</label>
+            <input type="number" id="NumberOfTrips" name="NumberOfTrips" value="0">
+
+            <label>Do you have a Passport?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="Passport" value="1">Yes</label>
+                <label><input type="radio" name="Passport" value="0">No</label>
+            </div>
+
+            <label>Pitch Satisfaction Score:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="PitchSatisfactionScore" value="5">Very Good</label>
+                <label><input type="radio" name="PitchSatisfactionScore" value="4">Good</label>
+                <label><input type="radio" name="PitchSatisfactionScore" value="3">Normal</label>
+                <label><input type="radio" name="PitchSatisfactionScore" value="2">Bad</label>
+                <label><input type="radio" name="PitchSatisfactionScore" value="1">Very Bad</label>
+            </div>
+
+            <label>Do you own a Car?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="OwnCar" value="1">Yes</label>
+                <label><input type="radio" name="OwnCar" value="0">No</label>
+            </div>
+
+            <label for="NumberOfChildrenVisiting">Number of Children Visiting:</label>
+            <input type="text" id="NumberOfChildrenVisiting" name="NumberOfChildrenVisiting" value="0">
+
+            <label>Designation:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="Designation" value="Executive">Executive</label>
+                <label><input type="radio" name="Designation" value="Manager">Manager</label>
+                <label><input type="radio" name="Designation" value="Senior Manager">Senior Manager</label>
+                <label><input type="radio" name="Designation" value="AVP">AVP</label>
+                <label><input type="radio" name="Designation" value="VP">VP</label>
+            </div>
+
+            <label for="MonthlyIncome">Monthly Income:</label>
+            <input type="text" id="MonthlyIncome" name="MonthlyIncome" value="0">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
